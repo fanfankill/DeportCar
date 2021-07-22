@@ -20,14 +20,19 @@
     "weapp.socket.io": "^2.1.0"
   },
   "name": "depotsystem",
+
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
- 
-    "start": "index.js"
+    "start": "node index.js"
   },
+
+  "engines": {
+    "node": "*"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
