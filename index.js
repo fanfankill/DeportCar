@@ -4,7 +4,7 @@ const router=require('./router.js')
 const app=express()
 const path=require('path')
 
-const db=require('./db')
+//数据库测试完成 7.23版本更新
 
 //启动静态资源服务
 app.use(express.static( 'public'));
@@ -85,9 +85,7 @@ io.on('connection',function(socket){
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-db.base('select * from 人员登录 ',null,(result=>{
-  console.log(result);
-}))
+
 
 //设置跨域请求
 app.all('*', function (req, res, next) {

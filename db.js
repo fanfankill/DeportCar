@@ -6,8 +6,8 @@ exports.base=(sql,data,callback)=>{
 const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'123456',
-    database:'depotsystem'
+    password:'Fjx20010620ff@',
+    database:'fanfan的库'
 })
 connection.connect()
 
