@@ -6,7 +6,7 @@ exports.base=(sql,data,callback)=>{
 const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'123456',
+    password:'Fjx20010620ff',
     database:'depotsystem'
 })
 connection.connect()

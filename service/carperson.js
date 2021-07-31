@@ -184,7 +184,12 @@ exports.addcartime=(req,res)=>{
     let addtime=info.addtime
    let lasttime= moment(nowdata).add(addtime, 'months')
     //格式化时间 最终的时间
-    lasttime=moment(lasttime).format()
+    lasttime=moment(lasttime).format('YYYY-MM-DD HH:mm:ss')
+
+    //2023-08-07T16:37:39+08:00
+    //2023-09-07 16:37:39
+    
+    console.log(lasttime);
 
     let data=[lasttime,info.CarportNumber]
 

@@ -77,7 +77,7 @@ exports.searchcar=(req,res)=>{
 
 //获取所有进出车辆表数据
 exports.getallcarjoin=(req,res)=>{
-    let sql='select * from 进出记录表 where IsDone=? group by ComeTime'
+    let sql='select * from 进出记录表 where IsDone=? '
     let data=[req.query.isdone]
     console.log(req.query.isdone);
     db.base(sql,data,(result=>{
